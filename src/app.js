@@ -1,23 +1,30 @@
-import './style/scss'
-
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import React from 'react'
 
 import ReactDOM from 'react-DOM'
 
-class App extends React.Component {
-  constructor(){
-    super()
-  }
+import 'bulma'
+
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import DogIndex from './components/DogIndex'
+import DogsShow from './components/DogsShow'
 
 
-  componentDidMount() {
-    fetch('https://api.thedogapi.com/v1/breeds/')
 
-  }
-
-  render(){
+class App extends React.Component{
+  render() {
     return(
-
+      <Router>
+        <main>
+          <Navbar />
+          <Switch>
+            <Route path="/dogs/:id" component={DogsShow} />
+            <Route path="/dogs" component={DogIndex} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </main>
+      </Router>
     )
   }
 }

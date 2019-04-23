@@ -1,12 +1,20 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpack = new HtmlWebpackPlugin({
+  template: 'src/index.html',
+  filename: 'index.html',
+  inject: 'body'
+})
+
+const HotModuleReplcement = new webpack.HotModuleReplacementPlugin()
 
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: path.resolve('dist'),
-    filename: 'bundle.js'
+    path: path.resolve('public'),
+    filename: 'app.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -16,18 +24,10 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.resolve('src'),
     hot: true,
-    open: true,
+    inline: true,
     port: 8000,
-    watchContentBase: true
+    open: true
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      filename: 'index.html',
-      inject: 'body'
-    })
-  ]
+  plugins: [HotModuleReplcement, HtmlWebpack]
 }
