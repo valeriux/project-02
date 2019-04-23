@@ -23,12 +23,18 @@ class Navbar extends React.Component {
               <span aria-hidden="true"></span>
             </a>
           </div>
+
           <div className={`navbar-menu${this.state.active ? ' is-active' : ''}`}>
 
             <div className="navbar-start">
-
               <Link to="/dogs" className="navbar-item">Look at my Dogs</Link>
             </div>
+
+
+            <div className="navbar-start">
+              <Link to="/dogs" className="navbar-item">Search for a Dog</Link>
+            </div>
+
           </div>
         </div>
       </nav>
