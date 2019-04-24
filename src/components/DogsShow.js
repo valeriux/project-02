@@ -48,7 +48,7 @@ class DogsShow extends React.Component {
             <div className="column is-half-desktop is-full-tablet">
               <h2 id="contenido" className="title is-3">Breed For:
                 {this.state.dog.bred_for}</h2>
-              <h2 id="contenido" className="title is-3">Temperament:         {this.state.dog.temperament}</h2>
+              <h2 id="contenido" className="title is-3">Temperament: {this.state.dog.temperament}</h2>
             </div>
           </div>
         </div>

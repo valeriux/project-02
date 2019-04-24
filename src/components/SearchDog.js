@@ -1,8 +1,6 @@
-import {Link} from 'react-router-dom'
 import React from 'react'
-import DogCard from './DogCard'
 import axios from 'axios'
-
+import Select from 'react-select'
 
 class SearchDog extends React.Component {
 
@@ -71,8 +69,7 @@ class SearchDog extends React.Component {
                   </figure>
                 </div>
                 <div className="column is-half-desktop is-full-tablet">
-                  <h2 id="contenido" className="title is-3">Breed For:
-                    {this.state.dog.bred_for}</h2>
+                  <h2 id="contenido" className="title is-3">Breed For:{this.state.dog.bred_for}</h2>
                   <h2 id="contenido" className="title is-3">Temperament: {this.state.dog.temperament}</h2>
                 </div>
               </div>
