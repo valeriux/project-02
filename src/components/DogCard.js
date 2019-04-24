@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
+
 class DogCard extends React.Component {
 
   constructor(props) {
@@ -9,6 +10,7 @@ class DogCard extends React.Component {
     this.state = {
       dog: null
     }
+
   }
 
   componentDidMount(){

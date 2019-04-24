@@ -12,6 +12,7 @@ body {
   background-image: url('/media/cartoon_dog1.jpg');
 }
 
+
 main {
   min-height: calc(100vh - 86px);
 }
@@ -33,6 +34,10 @@ a > .navbar-item {
   margin-bottom: 0;
 }
 
+.image{
+  height: 450px;
+  width: 450px;
+}
 
 .level{
   background-color: #fff;
@@ -45,7 +50,7 @@ a > .navbar-item {
   background-color: #fff;
   width: 600px;
   display: flex;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-left: 20px;
 }
 

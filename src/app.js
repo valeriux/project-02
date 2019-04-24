@@ -23,7 +23,6 @@ class App extends React.Component{
           'Created by: Valeria Bocanegra and Sean Gray',
           'Dog Pictures provided by'
         ]
-
       }
     }
   }
@@ -46,12 +45,7 @@ class App extends React.Component{
 
     )
   }
-
-
-
-
 }
-
 
 
 ReactDOM.render(

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import './style.scss'
 
 const Home = () => {
@@ -16,9 +17,13 @@ const Home = () => {
             <td  className="color"><h2 className="subtitle is-2">A site for Dog Breeds</h2></td>
           </tr>
         </table>
+
       </div>
+
+
     </section>
   )
 }
+
 
 export default Home
