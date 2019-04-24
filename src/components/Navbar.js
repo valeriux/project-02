@@ -27,13 +27,13 @@ class Navbar extends React.Component {
 
             <div className="navbar-start">
               <Link to="/dogs" className="navbar-item title is-6"><i className="fas fa-dog fa-2x"></i>  Look at my Dogs </Link>
+              <Link to="/dogs/search" className="navbar-item title is-6"><i className="fas fa-bone fa-2x"></i>Search for a Dog</Link>
             </div>
 
 
-            <div className="navbar-start">
-              <Link to="/dogs/search" className="navbar-item"><i className="fas fa-bone fa-2x"></i>Search for a Dog</Link>
 
-            </div>
+
+
 
           </div>
         </div>

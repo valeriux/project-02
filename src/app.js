@@ -13,6 +13,7 @@ import SearchDog from './components/SearchDog'
 
 import Footer from './components/Footer'
 
+//import Sound from 'react-sound'
 
 class App extends React.Component{
   constructor() {
@@ -42,6 +43,9 @@ class App extends React.Component{
           </Switch>
         </main>
         <Footer footer={this.state.footer} />
+
+
+
       </Router>
     )
   }

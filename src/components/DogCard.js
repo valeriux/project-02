@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DogCard = ({ name, image}) => {
+const DogCard = ({ name, image }) => {
   return (
     <div className="card">
       <div className="card-header">

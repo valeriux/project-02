@@ -1,8 +1,7 @@
-//import ReactDOM from 'react-router-dom'
-//import axios from 'axios'
-//import Select from 'react-select'
+import {Link} from 'react-router-dom'
 import React from 'react'
-//import ReactDOM from 'react-dom'
+import DogCard from './DogCard'
+
 
 class SearchDog extends React.Component {
 
@@ -10,6 +9,10 @@ class SearchDog extends React.Component {
     super()
 
     this.state = { dogs: [] }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.loadDogs = this.loadDogs.bind(this)
+
   }
 
   componentDidMount(){
@@ -22,14 +25,19 @@ class SearchDog extends React.Component {
       .then(data => this.setState({ dogs: data }))
   }
 
+  handleChange(e) {
+    this.props.history.push(`/dogs/${e.target.value}`)
+  }
+
 
 
   render() {
     return(
       <div className="select">
-        <select>
+        <select onChange={this.handleChange}>
           {this.state.dogs.map(dog =>
-            <option key={dog.id} value={dog.id}>{dog.name}</option>
+            <option key={dog.id} value={dog.id}>{dog.name}
+            </option>
           )}
         </select>
       </div>

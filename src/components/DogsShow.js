@@ -30,6 +30,7 @@ class DogsShow extends React.Component {
 
   render() {
     if(!this.state.dog) return null
+    console.log(this.state)
     return(
       <section className="section">
         <div className="container">
