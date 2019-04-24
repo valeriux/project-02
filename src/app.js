@@ -1,7 +1,6 @@
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import React from 'react'
-
-import ReactDOM from 'react-DOM'
+import ReactDOM from 'react-dom'
 
 import 'bulma'
 
@@ -13,7 +12,6 @@ import SearchDog from './components/SearchDog'
 
 import Footer from './components/Footer'
 
-//import Sound from 'react-sound'
 
 class App extends React.Component{
   constructor() {
@@ -44,12 +42,16 @@ class App extends React.Component{
         </main>
         <Footer footer={this.state.footer} />
 
-
-
       </Router>
+
     )
   }
+
+
+
+
 }
+
 
 
 ReactDOM.render(

@@ -10,7 +10,9 @@ body {
   background-image: url('/media/cartoon_dog1.jpg');
 }
 
-
+main {
+  min-height: calc(100vh - 86px);
+}
 /*********************
 Footer
 **********************/
@@ -82,4 +84,9 @@ table{
 
 .audio{
   background-color: white;
+}
+
+
+.select-class-name__control{
+  width: 100px;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 class Navbar extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = { active: true }
+    this.state = { active: false }
 
     this.toggleActive = this.toggleActive.bind(this)
   }
@@ -24,7 +24,7 @@ class Navbar extends React.Component {
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item title is-6"><i className="fas fa-paw fa-2x"></i>Home</Link>
+            <Link to="/" className="navbar-item"><i className="fas fa-paw fa-2x"></i>Home</Link>
 
             <a role="button" className={`navbar-burger${this.state.active ? ' is-active' : ''}`} onClick={this.toggleActive}>
 
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
           <div className={`navbar-menu${this.state.active ? ' is-active' : ''}`}>
 
             <div className="navbar-start">
-              <Link to="/dogs/search" className="navbar-item title is-6"><i className="fas fa-dog fa-2x"></i>  Search for a Dog</Link>
+              <Link to="/dogs/search" className="navbar-item"><i className="fas fa-dog fa-2x"></i>  Search for a Dog</Link>
             </div>
 
           </div>
@@ -47,4 +47,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar
+export default withRouter(Navbar)

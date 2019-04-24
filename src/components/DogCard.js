@@ -38,6 +38,7 @@ class DogCard extends React.Component {
             <img src={this.state.dog.image} />
           </figure>
         </div>
+        <audio src="media/sound1.mp3"></audio>
       </div>
     )
   }
