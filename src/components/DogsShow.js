@@ -45,9 +45,9 @@ class DogsShow extends React.Component {
               </figure>
             </div>
             <div className="column is-half-desktop is-full-tablet">
-              <h2 className="title is-2">{this.state.dog.bred_for}</h2>
-              <hr />
-              <p className="is-size-4">{this.state.dog.temperament}</p>
+              <h2 id="contenido" className="title is-3">Breed For:
+                {this.state.dog.bred_for}</h2>
+              <h2 id="contenido" className="title is-3">Temperament:         {this.state.dog.temperament}</h2>
             </div>
           </div>
         </div>
