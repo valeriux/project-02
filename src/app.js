@@ -11,21 +11,37 @@ import DogIndex from './components/DogIndex'
 import DogsShow from './components/DogsShow'
 import SearchDog from './components/SearchDog'
 
+import Footer from './components/Footer'
 
 
 class App extends React.Component{
+  constructor() {
+    super()
+    this.state = {
+      footer: {
+        text: [
+          'Project-02 © General Assembly 2019',
+          'Created by: Valeria Bocanegra and Sean Gray',
+          'Dog Pictures provided by'
+        ]
+
+      }
+    }
+  }
+
   render() {
     return(
       <Router>
         <main>
           <Navbar />
           <Switch>
+            <Route path="/dogs/search" component={SearchDog} />
             <Route path="/dogs/:id" component={DogsShow} />
             <Route path="/dogs" component={DogIndex} />
             <Route path="/" component={Home} />
-            <Route path="/dog:id" component={SearchDog} />
           </Switch>
         </main>
+        <Footer footer={this.state.footer} />
       </Router>
     )
   }
