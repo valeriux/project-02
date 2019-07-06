@@ -67,7 +67,7 @@ class SearchDog extends React.Component {
             <div className="columns">
               <div className="column is-half-desktop is-full-tablet">
                 <figure className="image is-4by4">
-                  <img src={this.state.dog.image} alt={this.state.dog.name} className="cocktail-show-image"/>
+                  <img src={this.state.dog.image} alt={this.state.dog.name} className="dog-show-image"/>
                 </figure>
               </div>
               <div className="column is-two-thirds-desktop">

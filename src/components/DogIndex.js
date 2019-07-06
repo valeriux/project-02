@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Loading from './Loading'
-import CocktailCard from './CocktailCard'
+import DogCard from './DogCard'
 import SearchDog from './SearchDog'
 import axios from 'axios'
 
-class CocktailIndex extends React.Component {
+class DogIndex extends React.Component {
 
   constructor() {
     super()
@@ -40,7 +40,7 @@ class CocktailIndex extends React.Component {
             <div key={dog.id} className="column is-one-fifth-desktop is-one-third-tablet">
 
               <Link to={`dogs/${dog.id}`}>
-                <CocktailCard {...dog} />
+                <DogCard {...dog} />
               </Link>
             </div>
           )}
@@ -50,4 +50,4 @@ class CocktailIndex extends React.Component {
     )
   }
 }
-export default CocktailIndex
+export default DogIndex

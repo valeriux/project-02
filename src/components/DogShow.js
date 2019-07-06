@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Loading from './Loading'
 
-class CocktailShow extends React.Component {
+class DogShow extends React.Component {
 
   constructor(props) {
     super(props)
@@ -62,4 +62,4 @@ class CocktailShow extends React.Component {
 }
 
 
-export default CocktailShow
+export default DogShow

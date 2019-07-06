@@ -1,5 +1,5 @@
 import React from 'react'
-import RandomCocktail from './RandomCocktail'
+import RandomDog from './RandomDog'
 
 class Home extends React.Component {
   constructor(){
@@ -11,7 +11,7 @@ class Home extends React.Component {
   render() {
     return(
       <section>
-        <RandomCocktail />
+        <RandomDog />
         <div className="container">
 
         </div>

@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 
-class CocktailCard extends React.Component {
+class DogCard extends React.Component {
 
   constructor(props) {
     super(props)
@@ -38,13 +38,13 @@ class CocktailCard extends React.Component {
 
         <div className="card-image">
           <figure className="image is-5by4">
-            <Link to={`/cocktails/${this.props.id}`}>
+            <Link to={`/dogs/${this.props.id}`}>
               {<img src={this.state.dog.image} alt={this.props.name} />}
             </Link>
           </figure>
         </div>
 
-        <Link to={`/cocktails/${this.props.id}`}><div id="subtitle_is5" className="subtitle is-size-4">{this.props.name}</div></Link>
+        <Link to={`/dogs/${this.props.id}`}><div id="subtitle_is5" className="subtitle is-size-4">{this.props.name}</div></Link>
 
 
 
@@ -59,4 +59,4 @@ class CocktailCard extends React.Component {
 
 
 
-export default CocktailCard
+export default DogCard

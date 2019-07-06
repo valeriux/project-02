@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-class RandomCocktail extends React.Component {
+class RandomDog extends React.Component {
 
   constructor(){
     super()
@@ -91,4 +91,4 @@ class RandomCocktail extends React.Component {
   }
 }
 
-export default RandomCocktail
+export default RandomDog
