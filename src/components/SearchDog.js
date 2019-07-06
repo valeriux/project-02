@@ -48,7 +48,7 @@ class SearchDog extends React.Component {
         <div className="columns">
           <div className="column is-half is-offset-one-quarter">
             <Select
-              placeholder={'Select something'}
+              placeholder={'Search for a dog breed'}
               onChange={this.handleChange}
 
               options={this.state.dogs.map(dog => {
