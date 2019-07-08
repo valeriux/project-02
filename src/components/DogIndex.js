@@ -22,20 +22,17 @@ class DogIndex extends React.Component {
 
 
   render() {
-    console.log(this.state.dogs, 'PROBANDO')
-    if(!this.state.dogs) return  <Loading />
+    if(!this.state.dogs) return <Loading />
     return (
       <section className="section" id="dog_section">
         <div className="container">
           <SearchDog dogs={this.state.dog}/>
-
           <br />
           <br />
         </div>
 
 
         <div className="columns is-multiline">
-
           {(this.state.dogs || []).map(dog =>
             <div key={dog.id} className="column is-one-fifth-desktop is-one-third-tablet">
 

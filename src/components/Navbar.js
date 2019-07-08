@@ -17,7 +17,7 @@ class Navbar extends React.Component {
     }
   }
   render() {
-    return(
+    return(    
       <nav className="navbar" id="navbar_style">
         <div className="container" id="navbar-letter" >
           <div className="navbar-brand" >

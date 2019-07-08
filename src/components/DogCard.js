@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Loading from './Loading'
 
 
 
@@ -31,7 +32,7 @@ class DogCard extends React.Component {
 
   render() {
     console.log(this.props.id, 'DIDIIIIIIIohohohoho')
-    if(!this.state.dog) return null
+    if(!this.state.dog) return <Loading />
     return(
 
       <div className="card">

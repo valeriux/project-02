@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Select from 'react-select'
+import Loading from './Loading'
 
 
 class SearchDog extends React.Component {
@@ -43,6 +44,7 @@ class SearchDog extends React.Component {
   }
 
   render() {
+    if(!this.state.dogs) return <Loading />
     return(
       <div className="container">
         <div className="columns">
