@@ -11,7 +11,7 @@ class DogIndex extends React.Component {
     super()
 
     this.state = {
-      dogs: []
+      dogs: null
     }
   }
 
@@ -31,7 +31,6 @@ class DogIndex extends React.Component {
           <br />
         </div>
 
-
         <div className="columns is-multiline">
           {(this.state.dogs || []).map(dog =>
             <div key={dog.id} className="column is-one-fifth-desktop is-one-third-tablet">
@@ -41,7 +40,6 @@ class DogIndex extends React.Component {
               </Link>
             </div>
           )}
-
         </div>
       </section>
     )

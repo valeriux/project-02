@@ -3,7 +3,6 @@ import axios from 'axios'
 import Loading from './Loading'
 
 class DogShow extends React.Component {
-
   constructor(props) {
     super(props)
 
@@ -11,6 +10,8 @@ class DogShow extends React.Component {
       dog: null
     }
   }
+
+
 
   componentDidMount(){
     axios.get(`https://api.thedogapi.com/v1/breeds/${this.props.match.params.id}`)

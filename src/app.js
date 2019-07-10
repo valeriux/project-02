@@ -7,7 +7,6 @@ import Home from './components/Home'
 import DogShow from './components/DogShow'
 import DogIndex from './components/DogIndex'
 import SearchDog from './components/SearchDog'
-
 import NavBar from './components/Navbar'
 
 class App extends React.Component {

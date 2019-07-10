@@ -3,17 +3,13 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Loading from './Loading'
 
-
-
 class DogCard extends React.Component {
 
   constructor(props) {
     super(props)
-
     this.state = {
       dog: []
     }
-
   }
 
   componentDidMount(){
@@ -34,9 +30,7 @@ class DogCard extends React.Component {
     console.log(this.props.id, 'DIDIIIIIIIohohohoho')
     if(!this.state.dog) return <Loading />
     return(
-
       <div className="card">
-
         <div className="card-image">
           <figure className="image is-5by4">
             <Link to={`/dogs/${this.props.id}`}>
@@ -46,18 +40,9 @@ class DogCard extends React.Component {
         </div>
 
         <Link to={`/dogs/${this.props.id}`}><div id="subtitle_is5" className="subtitle is-size-4">{this.props.name}</div></Link>
-
-
-
       </div>
-
-
     )
-
   }
 }
-
-
-
 
 export default DogCard
