@@ -38,7 +38,8 @@ To search you have two options:
 * You can select the breed from the list.
 * You can write for a specific breed
 
-In order to implement the search we use react-select.
+In order to implement the search we used react-select.
 
+<img width="697" alt="Screenshot 2019-07-12 at 04 18 16" src="https://user-images.githubusercontent.com/47470930/61117542-5c0fda00-a45c-11e9-9b2a-0d8931315e85.png">
 
 
