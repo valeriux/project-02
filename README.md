@@ -31,3 +31,4 @@ The brief was to:
 
 * The site can be run locally by cloning the repository and typing npm i and then npm run serve in the terminal.
 
+## App overview
