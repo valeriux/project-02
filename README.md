@@ -45,3 +45,8 @@ In order to implement the search we used react-select. We did two axios request:
 * The first one was to obtain the breed with the value that was selected.
 * The second one was to obtain the image per value.
 
+## Future enhancements
+
+* Add an endpoint in the Home page to generate a Random dog.
+* Implement a search to show a list of similar dog names.
+
