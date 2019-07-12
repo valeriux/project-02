@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-
 # GA - SEI - PROJECT-02 (Woof Woof Doggies Browser)
 
 <img width="1100" alt="Screenshot 2019-07-01 at 15 15 17" src="https://user-images.githubusercontent.com/47470930/60443387-10b32b80-9c13-11e9-970e-f877a2d0e975.png">
