@@ -24,10 +24,10 @@ This was a pair-coding, hackathon project at General Assembly.
 
 The brief was to:
 
-Consume a publicly available API
-Deliver the data back in a React app
-The project consumes data from Thedogapi API.
+* Consume a publicly available API and it was Thedogapi API.
+* Deliver the data back in a React app
 
-The site can be run locally by cloning the repository and typing npm i and then npm run serve in the terminal.
->>>>>>> 54300082bc15239f2c7c43517566431181fbbea1
->>>>>>> 7b53c965f837fb1b174073f0d707d4fa615b5db9
+## Installation
+
+* The site can be run locally by cloning the repository and typing npm i and then npm run serve in the terminal.
+
