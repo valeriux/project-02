@@ -33,9 +33,11 @@ The brief was to:
 
 ## App overview
 
-The application allows a user to search for a dog breed, returning the results under the search input. To search you have two options:
-* You can select from the list the breed.
-* You can choose write and seaarh the breed. 
+The application allows a user to search for a dog breed, returning the results under the search input. 
+To search you have two options:
+* You can select the breed from the list.
+* You can write for a specific breed
+
 In order to implement the search we use react-select.
 
 
