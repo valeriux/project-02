@@ -32,3 +32,8 @@ The brief was to:
 * The site can be run locally by cloning the repository and typing npm i and then npm run serve in the terminal.
 
 ## App overview
+
+* The application allows a user to search for a dog breed, returning the results under the search input. You can choose the breed or write. In order to implement the search we use react-select.
+
+
+
